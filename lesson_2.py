@@ -14,8 +14,8 @@
 #         print("У меня есть машина")
 
 
-# # father = Father()
-# # father.car()
+# father = Father()
+# father.car()
 
 
 
@@ -28,7 +28,7 @@
 
 
 # class Father:
-#     def info_father(self):
+#   def info_father(self):
 #         print("я отец")
 # class Mum:
 #      def info_mum(self):
@@ -78,22 +78,22 @@
 # print(f"{dog.name}:{dog.sound()}")
 
 
-class User:
-    def init(self, name, lastname, age, phone, email):
-        self.name = name
-        self.lastname = lastname
-        self.age = age
-        self.phone = phone
-        self.email = email
-    def info(self):
-        print(f"""Name: {self.name}
-lastname: {self.lastname}
-age: {self.age}
-number: {self.phone}
-email: {self.email}""")
+# class User:
+#     def init(self, name, lastname, age, phone, email):
+#         self.name = name
+#         self.lastname = lastname
+#         self.age = age
+#         self.phone = phone
+#         self.email = email
+#     def info(self):
+#         print(f"""Name: {self.name}
+# lastname: {self.lastname}
+# age: {self.age}
+# number: {self.phone}
+# email: {self.email}""")
 
-user = User("Nur", "Nurov", 15, "+994445566", "nur@gmail.com")
-user.info() 
+# user = User("Nur", "Nurov", 15, "+994445566", "nur@gmail.com")
+# user.info() 
 
 
 # class Auto:
