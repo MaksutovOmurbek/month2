@@ -10,7 +10,25 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS nurbolot(
     age  INTEGER           
 )''')
 
-cursor.execute('''INSERT INTO nurbolot(first_name, last_name, age)  VALUES("Omurbek", "Maksutov", 18)''')
-connect.commit()
-connect.close()
+
+
+# while True:
+#     first_name = input("введите имя: ")
+#     last_name = input("Введите фамилия: ")
+#     age = input("Введите возраст: ")
+
+    # cursor.execute(f'''INSERT INTO nurbolot(first_name, last_name, age) VALUES("{first_name}", "{last_name}", {age})''')
+    # connect.commit()
+    # connect.close()
+
+
+cursor.execute('''SELECT * FROM nurbolot''')
+data = cursor.fetchall()
+
+
+for result in data:
+    print(f"id: {result[0]}/n Имя: {result[1]}  Фамилия: {result[2]}  Возраст: {result[3]}/n")
+print("===============================================================================================")
+
+
 
