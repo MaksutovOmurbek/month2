@@ -76,7 +76,11 @@
 #         self.penalties = penalties
 
 #     def info(self):
-#         print(f"Model:{self.models}, Year:{self.year}, Color:{self.color}, Price:{self.price},Penalties:{self.penalties}")
+#         print(f'''Model:{self.models}, 
+# Year:{self.year}, 
+# Color:{self.color}, 
+# Price:{self.price},
+# Penalties:{self.penalties}''')
 
 
 # auto = Cars("Tesla X", "2023", "Black", "180000$", "No" )
