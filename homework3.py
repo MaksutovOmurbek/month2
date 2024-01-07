@@ -21,9 +21,9 @@ class Student(User):
         self.courses_enrolled.append(course)
         print(f"{self.name} enrolled in {course}")
 
-student1 = Student("Nurbolot", "Nurbolot@gmail.com", "02123", "S001")
-student1.login()
-student1.enroll_in_course("Backend")
+student = Student("Nurbolot", "Nurbolot@gmail.com", "02123", "S001")
+student.login()
+student.enroll_in_course("Backend")
 
 class Teacher(User):
     def __init__(self, name, email, password, teacher_id):
@@ -48,7 +48,7 @@ class Admin(User):
     def create_course(self, course):
         print(f"Course {course} created.")
 
-class TeachingAssistant(Student):
+class TeacherAssistant(Student):
     def __init__(self, name, email, password, student_id, teacher_id):
             Student.__init__(self, name, email, password, student_id)
             Teacher.__init__(self, name, email, password, teacher_id)
@@ -59,22 +59,22 @@ class TeachingAssistant(Student):
 
 
 
-student1 = Student("Nurbolot", "Nurbolot@gmail.com", "02123", "S001")
-student1.login()
-student1.enroll_in_course("Backend")
+student = Student("Nurbolot", "Nurbolot@gmail.com", "02123", "S001")
+student.login()
+student.enroll_in_course("Backend")
 
 
 
 
 
-admin1 = Admin("Admin", "admin@gmail.com", "admin123", "A001")
-admin1.login()
-admin1.create_course("Physics")
+admin = Admin("Admin", "admin@gmail.com", "admin123", "A001")
+admin.login()
+admin.create_course("Physics")
 
-ta1 = TeachingAssistant("Alex", "alex@gmail.com", "alex123", "S002", "T002")
-ta1.login()
-ta1.enroll_in_course("Computer Science")
-ta1.assist_course("Physics")
+teach = TeacherAssistant("Alex", "alex@gmail.com", "alex123", "S002", "T002")
+teach.login()
+teach.enroll_in_course("Computer Science")
+teach.assist_course("Physics")
 
 
 

@@ -1,34 +1,52 @@
-# class Computer:
-#     def __init__(self, __cpu, __memory):
-#         self.cpu = __cpu
-#         self.memory = __memory
+# class Dad:
+#     def dad_info(self):
+#         return " Это от деда"
+# class Father(Dad):
+#      def father_info(self):
+#         return " это от отца"
+# class Son(Father):
+#      def son_info(self):
+#         return " это от сына"
+
+# # dad = Dad()
+# # print(dad.dad_info())
+     
+# # father = Father()
+# # print(father.father_info())
+# # print(father.dad_info())
+     
+
+# son = Son()
+# print(son.son_info())
+# print(son.father_info())
+# print(son.dad_info())
 
 
+# class Dad:
+#     def dad_info(self):
+#         return "Это от деда"
+# class Father(Dad):
+#     def father_info(self):
+#         return "Это от отца"
+# class Son(Father):
+#     def son_info(self):
+#         return "Это от сына!"
+    
+# dad = Dad()
+# print(dad.dad_info())
+    
+# father = Father()
+# print(father.father_info())
+# print(father.dad_info())
+    
+# son = Son()
+# print(son.son_info())
+# print(son.dad_info())
+# print(son.father_info())
 
-
-# class Laptop(Computer):
-#         def __init__(self, __cpu, __memory):
-#              super().__init__(__cpu, __memory)
-      
-      
-#              @property
-#              def __init__(self):
-#                   return self.__cpu
-             
-#              @property
-#              def __init__(self):
-#                   return self.__memory
-
-
-
-
-# comp = Computer("Карта", "Память")
-# print(comp.cpu)
-# print(comp.memory)
 
 import sqlite3
-import random
-
+import   random
 connect  = sqlite3.connect("users_random.db")
 cursor = connect.cursor()
 
@@ -37,8 +55,8 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS clients(
             surname VARCHAR(255),
             age INTEGER,
             email VARCHAR(255),
-            password VARCHAR(255))''')
-
+            password VARCHAR(255)
+)''')
 class Game:
     def game(self):
         n = 0 
@@ -101,9 +119,3 @@ game_user.main()
 
 
 
-
-
-
-
-
-        

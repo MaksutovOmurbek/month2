@@ -1,0 +1,9 @@
+smart1 = input("Здраствуйте что хотите у нас есть {smartphone}, {headphones} {notebook} выберите: ")
+# headphones = 
+smartphone = input("вы зашли раздел смартфонов какую хотите {iphone}, {samsung}, {honor}, {redmi}, {motorolla}, {nokia}: ")
+iphone = ("цена iphone 25000") 
+samsung = ("цена samsung 17000")
+honor = ("цена honor 15000")
+redmi = ("цена redmi 18000")
+motorolla = ("цена motorolla 64000")
+nokia = ("цена nokia 3500")
