@@ -64,7 +64,7 @@
 #                 print("Неверная команда")
 
 
-# slot_machine = SlotMachine("Игрок")
+# slot_machine = SlotMachine("")
 # slot_machine.main()
 
 

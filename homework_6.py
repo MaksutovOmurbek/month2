@@ -11,7 +11,7 @@ import sqlite3
 connect = sqlite3.connect('library.db')
 cursor = connect.cursor()
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Books (
+    CREATE TABLE IF NOT EXISTS library (
         id INTEGER PRIMARY KEY,
         title VARCHAR(255),
         author VARCHAR(255),
@@ -21,13 +21,13 @@ cursor.execute('''
 connect.commit()
 
 
-sample_books = [
+books = [
     ('Harry Porter', 'Nout', 2000),
     ('Wertun', 'Qera', 2010),
     ('Mena', 'Nominar', 2020)
 ]
 
-cursor.executemany('INSERT INTO Books (title, author, year) VALUES(?, ?, ?)', sample_books)
+cursor.executemany('INSERT INTO library (title, author, year) VALUES(?, ?, ?)', books)
 connect.commit()
 
 
@@ -44,7 +44,7 @@ def add(title, author, year):
     cursor.execute('''INSERT INTO Books (title, author, year) VALUES("{title}", "{author}", "{book}")''')
     connect.commit()
 
-def update(title, new_author=None, new_year=None):
+def update(title, new_author, new_year):
     update_query = 'UPDATE Books SET '
     if new_author:
         update_query += f'author = "{new_author}"'

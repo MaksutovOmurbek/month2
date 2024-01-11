@@ -70,6 +70,7 @@
 # # muhammadamin.info()
 # # elaman.info()
 
+
 # # Арифметическме действия
 # print(muhammadamin + elaman)
 # print(muhammadamin - elaman)

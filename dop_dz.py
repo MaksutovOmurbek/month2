@@ -28,43 +28,6 @@
 #     print("Ошибка!!!!!!!!!!")
 
 
-import random
-
-len_password = int(input("Длина пароля: "))
-count_password = int(input("Количество паролей: "))
-letters = "qwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()?"
-
-for c in range(count_password):
-    result = ""
-    for i in range(len_password):
-        choice = random.choice(letters)
-        result = result + choice
-        result += choice
-    print(c + 1, result)
-
-num1 = 10
-num2 = 20
-while num1 < num2:
-    num1 += 1
-    print(num1)
-
-n = 0
-while True:
-    n += 1
-    print(n)
-    if n == 10000:
-        print("STOP")
-        break
-
-for num in range(1, 1001):
-    print(num)
-    if num == 500:
-        print("BREAK")
-        break
-    else:
-        print("continue")
-        continue
-
  
 
 
